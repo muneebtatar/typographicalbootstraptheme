@@ -22,8 +22,3 @@ If you run into any other problems with the theme, or encounter any bugs, Immedi
 Documentation comes packed with the typographical theme in the *docs* folder. You can also [view it online](http://blogstertutswoods.herokuapp.com/docs).
 
 You can [check the demo](https://blogstertutswoods.herokuapp.com/ "Demo").
-
-
-
-
-blog, portfolio, freelancer, sidebar, simple, header, responsive
