@@ -1,0 +1,782 @@
+/*
+
+	Typographical theme by tutswoods productions.
+	http://tutswoods.weebly.com/
+	
+*/
+
+/*
+	|========================================================|
+	|			       General styling					     |
+	|========================================================|
+*/
+
+body {
+	font-family: Georgia, serif;
+	font-size: 17px;
+}
+
+input, textarea  {
+	outline: none;
+	box-shadow:none !important;
+	border:1px solid #ccc !important;
+	font-family: arial;
+}
+
+h1  {
+	color: black;
+	font-family: 'Bitter', serif;
+	font-size: 50px;
+	font-weight: normal;
+	line-height: 54px;
+	margin: 0 0 24px;
+}
+
+@media only screen and (max-width: 990px)  {
+	h1  {
+		font-size: 45px;
+	}
+}
+
+h2,h3,h4,h5,h6 {
+	font-family: 'Bitter', serif;
+}
+
+p  {
+	color: black;
+	font-size: 20px;
+	line-height: 28px;
+	margin: 0 0 28px;
+}
+
+.logo {
+	font-family: 'Pacifico', cursive;
+	font-size: 50px;
+	margin: 10px;
+}
+
+@media only screen and (max-width: 990px)  {
+	.logo {
+		font-size: 40px;
+	}
+}
+
+.logo a {
+	text-decoration: none;
+	color: black;
+}
+
+.logo a:hover {
+	text-decoration: none;
+	color: black;
+	text-shadow: 0px 0px 2px #fff;
+}
+
+a  {
+	transition: all linear .25s;
+	color: #404040;
+	text-decoration: underline;
+}
+
+a:hover  {
+	color: #0085a1;
+	text-decoration: underline;
+}
+
+hr {
+	border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.hr-style-two {
+	border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+}
+
+/*
+	|========================================================|
+	|			      Blog post styling					     |
+	|========================================================|
+	
+	[Example: index.html]
+*/
+
+.first-paragraph:first-letter  {
+	padding: 6px 8px 0 0;
+	font-size: 80px;
+	float: left;       
+	font-weight: 400;  
+} 
+
+.paragraph-intro  {
+	font-size: 26px;
+	line-height: 36px;
+	margin: 0 0 28px;
+}
+
+.quote p, .quote i {
+	font-family: Enriqueta, Georgia, serif;
+	padding: 15px;
+	margin: 0px;
+	padding: 0px;
+	font-size: 23px;
+}
+
+.quote-box {
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	padding: 20px;
+}
+
+.quote i {
+	font-size: 23px;
+}
+
+.date  {
+	border-top: 1px solid black;
+	position:relative;
+	top: 20px;
+	margin-bottom: 30px;
+}
+
+.date span  {
+	font-family: montserrat;
+	font-size: 15px;
+	text-align: center;
+	padding-top: 5px;
+	background: #fff;
+	width: 180px;
+	margin: 0 auto;
+	display:block;
+	position:relative;
+	top: -16px;
+	text-transform: uppercase;
+}
+
+/*
+	|========================================================|
+	|			      Navigation menu					     |
+	|========================================================|
+*/
+
+.navigation-container {
+	padding: 5px;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+}
+
+.navigation-menu {
+	font-family: 'Montserrat', sans-serif;
+	padding: 0px;
+	margin: 0px;
+	text-align: center;
+}
+
+.navigation-menu li {
+	display: inline-block;
+	margin: 5px;
+	text-transform: uppercase;
+}
+
+.navigation-menu .active {
+	font-weight: bold;
+}
+
+.navigation-menu li a {
+	color: black;
+	text-decoration: none;
+}
+
+.navigation-menu li a:hover {
+	font-weight: bold;
+}
+
+/*
+	|========================================================|
+	|			       Components Styling					 |
+	|========================================================|
+*/
+
+/*
+  |======|
+  |	Box  |
+  |======|
+  
+  [Example: index.html (simple layouts) | in sidebars (sidebar layouts)]
+*/
+.box {
+	border: 1px solid rgba(34,34,34,.1);
+	padding: 30px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.box .title-container {
+	margin-top: -45px;
+	position: relative;
+	text-transform: uppercase;
+	text-align: center;
+	
+}
+
+.box .title-container span {
+	background-color: white;
+	padding-right: 20px;
+	padding-left: 20px;
+	font-family: 'Bitter', serif;
+}
+
+@media only screen and (max-width: 990px) {
+
+	.box .title-container {
+		font-size: 15px;
+	}
+	
+}
+
+/*
+  |===============|
+  |	Popular Posts |
+  |===============|
+  
+  [Example: about.html (simple layouts)]
+*/
+.popular-post  {
+	display: inline-block;
+	position: relative;  
+}
+
+.popular-post a {
+	text-decoration: none;
+}
+
+.popular-post img  {
+	display: block;
+	max-width:100%;
+	border-radius: 8px;
+}
+
+.popular-post .overlay  {
+	position: absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background-color: rgba(0,0,0,0.25);
+	color:white;
+	border-radius: 8px;
+}
+
+.overlay:hover {
+	opacity: 0.7;
+}
+
+.popular-post .overlay h2 {
+	text-align: center;
+}
+
+/*
+  |=================|
+  |	Showcasing info |
+  |=================|
+  
+  [Example: about.html]
+*/
+.info-thumb {
+	margin: 0 auto; 
+	display: block;
+	max-width: 100%;
+}
+
+@media only screen and (min-width: 1170px)  {
+	.info {
+		width: 78%; 
+		display: inline-block; 
+		margin-left: 20px;
+	}
+   
+  .info-thumb {
+		max-width: 40px; 
+		vertical-align: top;
+		margin: 5px;
+		display: inline-block;
+	}
+}
+
+/*
+  |===========|
+  |	Portfolio |
+  |===========|
+  
+  [Example: portfolio.html]
+*/
+@media only screen and (max-width: 990px)  {
+	.hero .paragraph-intro {
+		padding: 5px;
+	}
+}
+
+.portfolio img:hover {
+	opacity: 0.4;
+	transition: all linear .25s;
+}
+
+.portfolio-header hr {
+	margin-top: 15px;
+}
+
+.portfolio-header h1 {
+	font-size: 44px;
+}
+
+/*
+	|========================================================|
+	|			     Blog Post list styling					 |
+	|========================================================|
+*/
+.blog-post-header  {
+	margin-bottom: 0px;
+}
+
+.blog-post-header a {
+	color: black;
+	text-decoration: none;
+}
+
+.blog-post-header a:hover {
+	color: #0085a1;
+}
+
+.meta-data  {
+	border-top: 1px solid #fff;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	display: inline-block;
+}
+
+@media only screen and (max-width: 990px)  {
+	.meta-data {
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+}
+
+.meta-data span  {
+	color: white;
+	text-align: center;
+	padding: 6px;
+	background: black;
+	border-radius: 7px;
+	font-family: 'Montserrat', sans-serif; 
+	text-transform: uppercase;
+	font-size: 14px;
+	
+}
+
+/*
+	|========================================================|
+	|			        Button styling				         |
+	|========================================================|
+*/
+.theme-btn {
+	transition: all 0.3s ease 0s;
+	-moz-transition: all 0.3s ease 0s;
+	-webkit-transition: all 0.3s ease 0s;
+	font-family: Arial,sans-serif;  
+	font-weight: bold; 
+	font-size: 12px;
+}
+
+/*
+  |================|
+  |	Light/Dark btn |
+  |================|
+*/
+.btn-light-dark {
+	background: none repeat scroll 0 0 #999999;
+	color: #FFFFFF;
+}
+
+.btn-light-dark:hover {
+	background: none repeat scroll 0 0 #444444;
+	color: #FFFFFF;
+}
+
+/*
+  |===============|
+  |	Blue/Dark btn |
+  |===============|
+*/
+.btn-blue-dark {
+	background: none repeat scroll 0 0 #2DB6CF;
+	color: #FFFFFF;
+}
+
+.btn-blue-dark:hover {
+	background: none repeat scroll 0 0 #444444;
+	color: #FFFFFF;
+}
+
+/*
+  |================|
+  |	Green/Dark btn |
+  |================|
+*/
+.btn-green-dark {
+	background: none repeat scroll 0 0 #46b98a;
+	color: #FFFFFF;
+}
+
+.btn-green-dark:hover {
+	background: none repeat scroll 0 0 #444444;
+	color: #FFFFFF;
+}
+
+/*
+  |=============|
+  |	Icon button |
+  |=============|
+*/
+.icon-btn {
+	transition: all .3s ease;
+	cursor: pointer;
+	margin: 5px; 
+	opacity: 1;
+}
+
+.icon-btn:hover {
+	opacity: 0.5;
+}
+
+/*
+	|========================================================|
+	|			        Helper Classes				         |
+	|========================================================|
+*/
+.img-responsive {
+	width: 100%; 
+	height: 100%;
+}
+
+.image-with-shadow-and-border {
+	border-radius: 6px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+	transition: all linear .25s;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.image-with-shadow-and-border:hover {
+	box-shadow: none;
+	
+}
+
+.input-with-radius {
+	border-radius: 20px;
+}
+
+.img-center {
+	margin: 0 auto; 
+	display: block;
+}
+
+.text-align-left {
+	text-align: left;
+}
+
+.inline-block {
+	display: inline-block;
+}
+
+.list-with-no-underlined-links a {
+	text-decoration: none;
+}
+
+.list-with-no-padding-and-margin {
+	padding: 0px; 
+	margin-bottom: 0px; 
+}
+
+.list-style-type-none {
+	list-style-type: none;
+}
+
+.list-li-spacing li {
+	margin-bottom: 5px;
+}
+
+.list-inline-li-spacing li {
+	margin-right: 5px;
+}
+
+.list-inline-li li {
+	display: inline-block;
+}
+
+.list-box {
+	padding-left: 20px;
+}
+
+.spacing {
+	margin: 30px;
+}
+
+.mb {
+	margin-bottom: 25px;
+}
+
+.mt {
+	margin-top: 25px;
+}
+
+.mbzero {
+	margin-bottom: 0px;
+}
+
+.mtzero {
+	margin-top: 0px;
+}
+
+.a-with-no-underlined-link a {
+	text-decoration: none;
+}
+
+.a-on-hover-no-color-change a:hover {
+	color: black;
+}
+
+.montserrat {
+	font-family: 'Montserrat', Helvetica;
+}
+
+.bitter {
+	font-family: 'Bitter', Helvetica;
+}
+
+.georgia  {
+	font-family: Georgia, serif;
+}
+
+.enriqueta {
+	font-family: Enriqueta, Georgia, serif;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.text-white {
+	color: white;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.heading {
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.right-vertical-hr {
+	border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.left-vertical-hr {
+	border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (max-width: 990px)  {
+	.right-vertical-hr {
+		border-right: none;
+	}
+	
+	.left-vertical-hr {
+		border-left: none;
+	}
+}
+
+/*
+	|========================================================|
+	|			      Hero layout styling					 |
+	|========================================================|
+*/
+
+.hero {
+	background-image: url('../img/banner.jpg'); 
+	display: inline-block; 
+	width: 100%; 
+	background-size: cover; 
+	background-attachment: fixed; 
+	padding: 100px;
+	box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.35);
+	margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 990px)  {
+	.hero {
+		padding: 25px;
+	}
+}
+
+/*
+  |==============|
+  |	Logo in hero |
+  |==============|
+*/
+
+.hero .logo a {
+	color: white;
+}
+
+/*
+  |====================|
+  |	Navigation in hero |
+  |====================|
+*/
+
+.hero .navigation-container {
+	border-color: white;
+}
+
+.hero .navigation-container .navigation-menu li a {
+	color: white;
+}
+
+/*
+  |=============|
+  |	Box in hero |
+  |=============|
+*/
+
+.hero .box  {
+	border-color: white;
+}
+
+.hero-with-box {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	margin-bottom: 30px;
+}
+
+.hero .box p, .hero .box h2 {
+	color: white;
+}
+
+.hero .box span {
+	color: black;
+}
+
+/*
+  |===========================|
+  |	Blog post heading in hero |
+  |===========================|
+  
+  [Example: blog-post.html (sidebar hero layout)]
+*/
+
+.hero-blog-post {
+	padding: 50px;
+}
+
+.hero-blog-post h1 {
+	color: white;
+}
+
+.hero-blog-post .date {
+	border-color: white;
+}
+
+.hero-blog-post .paragraph-intro {
+	padding-left: 50px; 
+	padding-right: 50px;
+}
+
+/*
+	|========================================================|
+	|			      	Comment styling					 	 |
+	|========================================================|
+  
+  [Example: blog-post.htm]
+*/
+.comment-list .row {
+	margin-bottom: 0px;
+}
+
+.comment-list .panel .panel-heading .panel-body {
+	padding-top: 6px;
+}
+
+.comment-list figcaption {
+	word-wrap: break-word;
+}
+
+@media (min-width: 768px) {
+
+	.comment-list .arrow:after, .comment-list .arrow:before {
+		content: "";
+		position: absolute;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-color: transparent;
+	  }
+	  
+	.comment-list .panel.arrow.left:after, .comment-list .panel.arrow.left:before {
+		border-left: 0;
+	}
+	
+	.comment-list .panel.arrow.left:before {
+		left: 0px;
+		top: 30px;
+		border-right-color: inherit;
+		border-width: 16px;
+	}
+
+	
+	.comment-list .panel.arrow.left:after {
+		left: 1px;
+		top: 31px;
+		border-right-color: #FFFFFF;
+		border-width: 15px;
+	}
+
+}
+
+.comment-list .comment-post {
+	margin-top: 6px;
+}
+
+
+/*
+	|========================================================|
+	|			      	  Other Styles				 	     |
+	|========================================================|
+*/
+
+.footer-li {
+	margin-top: 2px;
+}
+
+.google-maps {
+	position: relative;
+	padding-bottom: 75%; // This is the aspect ratio
+	height: 0;
+overflow: hidden;
+}
+
+.google-maps iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100% !important;
+	height: 100% !important;
+}
